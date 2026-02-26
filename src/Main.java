@@ -31,6 +31,11 @@ public class Main {
                 }
             }
 
+            if (mismatchCount == 0){
+                System.out.println("Строка паллиндром");
+                return true;
+            }
+
             char[] newArray = new char[chars.length - 1];
 
             for (i = 0; i < mismatchIndex; i++) {
